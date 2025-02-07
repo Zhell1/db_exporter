@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Export Tables</title>
+    <!-- from https://github.com/Zhell1/db_exporter -->
+</head>
+<body>
+
+    <h2>Export Tables from MySQL</h2>
+
+    <!-- Form to collect the database connection details and table keyword -->
+    <form action="export_tables.php" method="POST">
+        <label for="host">Database Host:</label>
+        <input type="text" id="host" name="host" required><br><br>
+
+        <label for="user">Database User:</label>
+        <input type="text" id="user" name="user" required><br><br>
+
+        <label for="dbname">Database Name:</label>
+        <input type="text" id="dbname" name="dbname" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="keyword">Table Keyword (e.g. %wph4_%):</label>
+        <input type="text" id="keyword" name="keyword" required><br><br>
+
+        <button type="submit">Fetch Tables</button>
+    </form>
+
+</body>
+</html>
